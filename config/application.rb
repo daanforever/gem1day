@@ -20,7 +20,9 @@ module Gem1day
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     config.generators do |g|
-      g.test_framework :rspec
+      g.test_framework  :rspec, :fixture => true, :views => false
+      g.integration_tool :rspec, :fixture => true, :views => true
+      g.fixture_replacement :factory_girl, dir: 'spec/factories'
     end
   end
 end

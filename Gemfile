@@ -46,6 +46,7 @@ end
 
 gem 'twitter-bootstrap-rails'         # Twitter Bootstrap for Rails
 gem 'less-rails'                      # For twitter-bootstrap-rails
+gem 'therubyracer'                    # For twitter-bootstrap-rails
 gem 'awesome_print'                   # For rails console
 
 gem 'thin'                            # Web server
