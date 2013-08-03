@@ -1,4 +1,8 @@
 Gem1day::Application.routes.draw do
+
+
+  root to: redirect('/about.html')
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
