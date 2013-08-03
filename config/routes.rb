@@ -1,6 +1,7 @@
 Gem1day::Application.routes.draw do
 
 
+  devise_for :users
   root to: redirect('/about.html')
 
   # The priority is based upon order of creation: first created -> highest priority.
