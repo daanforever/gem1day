@@ -47,12 +47,15 @@ end
 gem 'twitter-bootstrap-rails'         # Twitter Bootstrap for Rails
 gem 'less-rails'                      # For twitter-bootstrap-rails
 gem 'therubyracer'                    # For twitter-bootstrap-rails
+
 gem 'awesome_print'                   # For rails console
 
 gem 'thin'                            # Web server
 gem 'foreman'                         # Process organizer
 gem 'devise'                          # Authentication
 gem 'cancan'                          # Authorization
+
+gem 'formtastic'                      # Rails FormBuilder DSL
 
 group :test do
   gem 'rspec-rails'                   # testing framework
