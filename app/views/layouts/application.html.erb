@@ -46,8 +46,12 @@
           </a>
           <a class="brand" href="/">Gem1day</a>
           <div class="container nav-collapse">
+            <ul class="nav">
+              <li><%= link_to "Users", users_path %></li>
+            </ul>
             <ul class="nav pull-right">
             <% if current_user %>
+              <li><%= link_to current_user.email.to_s, edit_user_registration_path %></li>
               <li><%= link_to "Logout", destroy_user_session_path, method: :delete  %></li>
             <% else %>
               <li><%= link_to "Sign Up", new_user_registration_path  %></li>
