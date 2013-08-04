@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require_tree .
+ *= require formtastic
  */
 
  body { padding-top: 4em; } 
