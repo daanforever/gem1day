@@ -44,10 +44,17 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'thin'    # Web server
-gem 'foreman' # Process organizer
+gem 'twitter-bootstrap-rails'         # Twitter Bootstrap for Rails
+gem 'less-rails'                      # For twitter-bootstrap-rails
+gem 'therubyracer'                    # For twitter-bootstrap-rails
+gem 'awesome_print'                   # For rails console
+
+gem 'thin'                            # Web server
+gem 'foreman'                         # Process organizer
+gem 'devise'                          # Authentication
+gem 'cancan'                          # Authorization
 
 group :test do
-  gem 'rspec-rails' # testing framework
-  gem 'zeus'        # A DRb server for testing frameworks
+  gem 'rspec-rails'                   # testing framework
+  gem 'factory_girl_rails'            # fixture replacement
 end
