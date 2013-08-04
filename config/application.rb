@@ -21,6 +21,7 @@ module Gem1day
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     
     config.i18n.default_locale = :ru
+    config.i18n.fallbacks = {ru: :en}
 
     config.generators do |g|
       g.test_framework  :rspec, :fixture => true, :views => false
