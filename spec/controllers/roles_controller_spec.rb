@@ -30,6 +30,11 @@ describe RolesController do
   # RolesController. Be sure to keep this updated too.
   let(:valid_session) { {} }
 
+  before(:each) do
+    @user = create(:user)
+    sign_in @user
+  end
+
   describe "GET index" do
     it "assigns all roles as @roles" do
       role = Role.create! valid_attributes
