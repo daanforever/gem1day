@@ -40,6 +40,7 @@ GEM
     coffee-script-source (1.6.3)
     commonjs (0.2.6)
     daemons (1.1.9)
+    database_cleaner (1.0.1)
     devise (3.0.1)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -173,8 +174,9 @@ DEPENDENCIES
   awesome_print
   cancan
   coffee-rails (~> 4.0.0)
+  database_cleaner
   devise
-  factory_girl_rails
+  factory_girl_rails (~> 4.0)
   foreman
   formtastic
   formtastic-bootstrap

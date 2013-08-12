@@ -2,8 +2,7 @@ require 'spec_helper'
 
 describe "Users" do
   before(:each) do
-    @user = create(:user)
-    ap User.all
+    login
   end
 
   describe "GET /users" do
