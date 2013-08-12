@@ -56,6 +56,7 @@ gem 'devise'                          # Authentication
 gem 'cancan'                          # Authorization
 
 gem 'formtastic'                      # Rails FormBuilder DSL
+gem 'formtastic-bootstrap'            # Formtastic integration with bootstrap
 
 group :test do
   gem 'rspec-rails'                   # testing framework
