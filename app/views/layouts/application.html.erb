@@ -48,6 +48,7 @@
           <div class="container nav-collapse">
             <ul class="nav">
               <li><%= link_to "Users", users_path %></li>
+              <li><%= link_to "Roles", roles_path %></li>
             </ul>
             <ul class="nav pull-right">
             <% if current_user %>
@@ -65,14 +66,14 @@
 
     <div class="container">
         <div class="row">
-          <div class="span12">
+          <div class="span8 offset2">
             <%= bootstrap_flash %>
             <%= yield %>
           </div>
         </div><!--/row-->
 
       <footer>
-        <p>&copy; Company 2013</p>
+        <p style="text-align: center">&copy; Company 2013</p>
       </footer>
 
     </div> <!-- /container -->
