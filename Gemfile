@@ -58,6 +58,10 @@ gem 'cancan'                          # Authorization
 gem 'formtastic'                      # Rails FormBuilder DSL
 gem 'formtastic-bootstrap'            # Formtastic integration with bootstrap
 
+group :development do
+  gem 'zeus'                          # Preloader
+end
+
 group :test do
   gem 'rspec-rails'                   # testing framework
   gem 'factory_girl_rails'            # fixture replacement
