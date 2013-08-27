@@ -47,8 +47,10 @@
           <a class="brand" href="/">Gem1day</a>
           <div class="container nav-collapse">
             <ul class="nav">
-              <li><%= link_to "Users", users_path %></li>
-              <li><%= link_to "Roles", roles_path %></li>
+              <% if user.has_role?(:system, :administrator) %>
+              <li><%= link_to "Users", admin_users_path %></li>
+              <li><%= link_to "Roles", admin_roles_path %></li>
+              <% end %>
             </ul>
             <ul class="nav pull-right">
             <% if current_user %>
@@ -69,6 +71,8 @@
           <div class="span8 offset2">
             <%= bootstrap_flash %>
             <%= yield %>
+            <%= yield :role_sidebar %>
+            <%= yield :role_main %>
           </div>
         </div><!--/row-->
 
