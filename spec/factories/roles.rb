@@ -2,8 +2,8 @@
 
 FactoryGirl.define do
   factory :role do
-    ability "MyString"
-    resource "MyString"
-    condition "MyString"
+    name { generate(:string) }
+    title { generate(:string) }
+    description { generate(:string) }
   end
 end
