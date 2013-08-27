@@ -55,6 +55,9 @@ gem 'foreman'                         # Process organizer
 gem 'devise'                          # Authentication
 gem 'the_role', github: 'the-teacher/the_role'   # Authorization
 
+gem 'activeadmin'                     # Administrative panel
+gem "meta_search"                     # For activeadmin
+
 gem 'formtastic'                      # Rails FormBuilder DSL
 gem 'formtastic-bootstrap'            # Formtastic integration with bootstrap
 
