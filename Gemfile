@@ -53,7 +53,7 @@ gem 'awesome_print'                   # For rails console
 gem 'thin'                            # Web server
 gem 'foreman'                         # Process organizer
 gem 'devise'                          # Authentication
-gem 'cancan'                          # Authorization
+gem 'the_role', github: 'the-teacher/the_role'   # Authorization
 
 gem 'formtastic'                      # Rails FormBuilder DSL
 gem 'formtastic-bootstrap'            # Formtastic integration with bootstrap
