@@ -55,7 +55,7 @@ gem 'foreman'                         # Process organizer
 gem 'devise'                          # Authentication
 gem 'the_role', github: 'the-teacher/the_role'   # Authorization
 
-gem 'activeadmin'                     # Administrative panel
+gem 'activeadmin', github: 'gregbell/active_admin', :branch => 'rails4' # Administrative panel
 gem "meta_search"                     # For activeadmin
 
 gem 'formtastic'                      # Rails FormBuilder DSL
@@ -68,5 +68,5 @@ end
 group :test do
   gem 'rspec-rails'                   # Testing framework
   gem 'factory_girl_rails', '~> 4.0'  # Fixture replacement
-  gem 'database_cleaner'              # Strategies for cleaning databases in Ruby
+  gem 'database_cleaner', '=1.0.1'     # Strategies for cleaning databases in Ruby
 end
