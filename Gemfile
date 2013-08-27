@@ -58,6 +58,8 @@ gem 'the_role', github: 'the-teacher/the_role'   # Authorization
 gem 'formtastic'                      # Rails FormBuilder DSL
 gem 'formtastic-bootstrap'            # Formtastic integration with bootstrap
 
+gem 'coveralls', require: false       # for https://coveralls.io
+
 group :development do
   gem 'zeus'                          # Preloader
 end
